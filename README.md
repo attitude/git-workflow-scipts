@@ -69,8 +69,8 @@ About me
 Web designer, mostly graphic designer, coding enthusiast, occasional developer and a [dog lover](http://instagram.com/martin_adamko).
 If you feel like saying hi, you can do it on [Twitter](http://twitter.com/martin_adamko).
 
-*Note:* I am not anyhow related to [Websupport.sk](http://www.websupport.sk/), I just they are the best 
-web hosting service around so you might want to check them out.
+*Note:* I am not anyhow related to [Websupport.sk](http://www.websupport.sk/), I just feel like it is 
+the best web hosting service around so you might want to check them out.
 
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
