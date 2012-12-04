@@ -83,11 +83,15 @@ Local working copy		< where the hard work is done
    :
    .
 
-NOTE:	This setup is not a default WEBSUPPORT.sk setup. I use .htaccess to root my subdirectories
-	a lot as I have few domain redirects active to my unlimited hosting.
-	
-	To use with default setup you need to figure out how many dirname() functions to use in the 
-	post-receive hook to find [this-file].sh script.
+Notes:
+
+- This setup is not a default WEBSUPPORT.sk setup. I use .htaccess to root my subdirectories
+  a lot as I have few domain redirects active to my unlimited hosting.
+  To use with default setup you need to figure out how many dirname() functions to use in the 
+  post-receive hook to find [this-file].sh script.
+- You need to set the $userathost variable with your data
+- The directory you wish to copy to must contain /.ssh/authorised_keys file to allow passwordless 
+  connection
 
  */
 
