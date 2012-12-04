@@ -1,0 +1,32 @@
+#!/usr/bin/php
+<?php
+
+$repository_dir_name = dirname(dirname(dirname(__FILE__)));
+
+echo "> Hook called from: ".__FILE__."\n";
+
+$command = dirname($repository_dir_name)."/syncremotes.sh {$repository_dir_name}";
+
+try
+{
+	$output = array();
+	$return = false;
+	
+	echo "> Executing: \$ $command\n";
+	exec($command, $output, $return);
+	
+	if( $return === 1 )
+	{
+		throw new Exception("Unable to sync with remote");
+	}
+	
+	echo "> ".implode("\n> ",$output)."\n";
+}
+catch(Exception $e)
+{
+	exit( ' ! ERROR: '.$e->getMessage()."\n" );
+}
+
+exit(0);
+
+?>
